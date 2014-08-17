@@ -13,7 +13,7 @@ buildpack_dir=$(cd $(dirname $0); cd ..; pwd)
 source $buildpack_dir/bin/common.sh
 
 export_env_dir $env_dir
-build_env=${EMBER_ENV:-production}
+build_env=${EMBER_ENV:-development}
 
 mkdir -p $build_dir/vendor
 
